@@ -1,22 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
-@font-face {
-    font-family: "GilroyExtrabold";
-    src: url("/alpha.digital/fonts/gilroy-extrabold.otf") format("opentype");
-}
-
 :root {
-    --color-primary: #25bcff;
-    --color-secondary: #e43a56;
-    --color-gray: #454545;
-    --color-light-gray: #909090;
     --color-white: #ffffff;
     --color-black: #101010;
+
+    --theme-color-one: #25bcff;
+    --theme-color-two: #e43a56;
+    --theme-color-three: #2c2c2c;
+    --theme-color-four: #dedede;
+
+    --bp-sm: 468px;
+    --bp-md: 768px;
+    --bp-lg: 1024px;
 }
 
 * {
     font-family: "Roboto", "sans-serif";
+    color: var(--color-white);
     padding: 0;
     margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
 }
